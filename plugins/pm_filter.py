@@ -74,7 +74,6 @@ async def pm_text(bot, message):
                 InlineKeyboardButton("📝🔰Cʟɪᴄᴋ Hᴇʀᴇ📝🔰", url='https://t.me/abmovierequestgroup')
             ]]
     await message.reply_text("<b>ʜᴇʏ ᴅᴜᴅᴇ 😍 ,
-
 ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>") reply_markup=InlineKeyboardMarkup (buttons))
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -249,7 +248,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/howtodownloadmovie1200/56")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -362,7 +361,7 @@ async def language_check(bot, query):
         ])
 
         btn.insert(0, [
-            InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/howtodownloadmovie1200/56")
         ])
 
         if offset != "":
