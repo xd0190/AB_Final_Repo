@@ -70,8 +70,12 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs !</b>")
-    await bot.send_message(
+    buttons = [[
+                InlineKeyboardButton("👻Cʟɪᴄᴋ Hᴇʀᴇ👻", url='https://t.me/abmovierequestgroup')
+            ]]
+    await message.reply_text("<b>अगर आप मूवी या वेब सीरीज लेना चाहते हैं तो यहां पर क्लिक करें 👇🏻</b>", reply_markup=InlineKeyboardMarkup (buttons))
+    
+   await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
