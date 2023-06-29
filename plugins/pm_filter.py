@@ -71,7 +71,7 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     buttons = [[
-                InlineKeyboardButton("📝 Click Here🔰", url='https://t.me/abmovierequestgroup')
+                InlineKeyboardButton("📝 Click Here🔰", url='https://t.me/nawab_me0')
             ]]
     await message.reply_text("<b>ʜᴇʏ ᴅᴜᴅᴇ 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ👇</b>", reply_markup=InlineKeyboardMarkup(buttons))
     await bot.send_message(
@@ -247,7 +247,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/howtodownloadmovie1200/56")
+        InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/nawabbotupdate")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -360,7 +360,7 @@ async def language_check(bot, query):
         ])
 
         btn.insert(0, [
-            InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/howtodownloadmovie1200/56")
+            InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/nawabbotupdate")
         ])
 
         if offset != "":
@@ -731,7 +731,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Ab_Admin0")
+                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/nawab_me")
                                 ]
                                 ]
                             )
@@ -1209,8 +1209,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url="https://t.me/AB_BotZ_Update"),
-            InlineKeyboardButton('Help', url="https://t.me/Ab_Admin0")
+            InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url="https://t.me/nawab_me"),
+            InlineKeyboardButton('Help', url="https://t.me/nawab_me")
         ],[
             InlineKeyboardButton('⇐ ʙᴀᴄᴋ', callback_data='start')
         ]]
@@ -1442,7 +1442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/Ab_Admin0")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/nawab_me")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1650,7 +1650,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
 
     btn.insert(0, [
-        InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/howtodownloadmovie1200/56")
+        InlineKeyboardButton("🎬 How To Download 🎬", url=f"https://t.me/nawabbotupdate")
     ])
 
     if offset != "":
